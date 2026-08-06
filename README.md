@@ -6,8 +6,6 @@ Aqui estão concentrados trabalhos que envolvem automação web, testes de API, 
 
 ## Objetivo do portfólio
 
-## Objetivo do portfólio
-
 - Demonstrar minha experiência prática em qualidade de software
 - Apresentar projetos desenvolvidos ao longo dos meus estudos
 - Mostrar a aplicação de boas práticas de testes, automação e organização
