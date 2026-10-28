@@ -122,16 +122,19 @@ Consulta realizada em 25/10/2026, por leitura dos READMEs, estruturas e arquivos
 
 ## Executar localmente
 
-Abra a pasta `qa-portfolio` no VS Code e use **Open with Live Server** no `index.html`. Não é necessário instalar dependências ou compilar.
+Este portfólio foi desenvolvido com HTML5, CSS3 e JavaScript, sem necessidade de instalação de dependências ou compilação.
 
-Alternativamente, na pasta do repositório:
+Para visualizar o projeto:
 
-```bash
-python -m http.server 5500
-```
+Clone ou baixe o repositório qa-portfolio.
 
-Acesse `http://localhost:5500`. O site usa caminhos relativos e é compatível com GitHub Pages. A publicação é uma etapa posterior, sujeita à aprovação do autor.
+Abra a pasta do projeto no Visual Studio Code.
 
+Abra o arquivo index.html diretamente no navegador.
+
+Opcional: utilize a extensão Live Server do VS Code para visualizar as alterações automaticamente durante o desenvolvimento.
+
+O projeto utiliza arquivos estáticos e está preparado para hospedagem no GitHub Pages.
 ## Estrutura
 
 ```text
