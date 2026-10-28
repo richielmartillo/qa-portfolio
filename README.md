@@ -5,7 +5,7 @@ QA Tester freelancer em crowdtesting pela uTest, com experiência em testes func
 Este portfólio demonstra pensamento crítico, estratégia de testes, análise de riscos, automação e qualidade de software. Os repositórios abaixo são projetos técnicos desenvolvidos durante a formação e em práticas independentes; não representam vínculos profissionais contratados. A atuação profissional em crowdtesting é apresentada separadamente no site.
 
 ### Detalhes
-![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=richielmartillo&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=richielmartillo&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ## Projetos em destaque
 
@@ -111,7 +111,7 @@ Consulta realizada em 25/10/2026, por leitura dos READMEs, estruturas e arquivos
 - GitHub Actions: a busca por workflows na conta não retornou evidência. Uso em projeto específico permanece pendente de confirmação.
 - LinkedIn: endereço preservado do HTML original e informado pelo projeto; a titularidade e o acesso público não foram verificados de forma independente.
 - Nenhum e-mail profissional foi encontrado nos arquivos locais. Nenhum endereço de e-mail foi criado.
-- O endereço do site publicado será incluído apenas após confirmação de funcionamento e aprovação para publicação.
+- Site publicado no GitHub Pages: [qa-portfolio](https://richielmartillo.github.io/qa-portfolio/).
 
 ## Experiência, formação e idiomas
 
@@ -142,7 +142,7 @@ qa-portfolio/
 ├── index.html       # Conteúdo semântico e projetos acessíveis sem JavaScript
 ├── styles.css       # Identidade visual e layouts responsivos
 ├── script.js        # Menu, filtros, digitação e chuva digital
-├── README.md
+└── README.md
 
 ```
 
@@ -151,7 +151,9 @@ qa-portfolio/
 Identidade tecnológica inspirada em terminais e painéis industriais, com preto profundo, verde Matrix, vermelho industrial e cinza metálico. Não utiliza personagens, logotipos ou imagens de franquias.
 
 - Layout responsivo com Grid e Flexbox; navegação por teclado e link de salto.
-- Menu mobile com estado expandido, fechamento por Escape e retorno de foco.
+- Até 780px, menu recolhível com `aria-expanded`, fechamento por Escape e retorno de foco. Acima de 780px, navegação horizontal sem botão Menu.
+- Ao cruzar o breakpoint, o menu é fechado e o foco é transferido quando o controle ou link focado ficaria oculto.
+- As regras responsivas ficam centralizadas em `styles.css`, sem folha adicional para o menu.
 - Conteúdo principal disponível sem JavaScript; filtros são melhoria progressiva.
 - Animações respeitam `prefers-reduced-motion`; chuva digital limitada e pausada fora da área visível e em abas inativas.
 - Botão para pausar os efeitos animados.

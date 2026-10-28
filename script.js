@@ -2,15 +2,25 @@
 document.documentElement.classList.add('js');
 const nav = document.querySelector('.main-nav');
 const toggle = document.querySelector('.menu-toggle');
-toggle.hidden = false;
+// Keep the interaction breakpoint identical to the CSS media query.
+const mobileMenu = matchMedia('(max-width: 780px)');
 function closeMenu(restoreFocus = false) {
   nav.classList.remove('open');
   toggle.setAttribute('aria-expanded', 'false');
   toggle.setAttribute('aria-label', 'Abrir menu');
   if (restoreFocus) toggle.focus();
 }
-closeMenu();
+function syncMenu() {
+  const focusWasOnToggle = document.activeElement === toggle;
+  const focusWasInNav = nav.contains(document.activeElement);
+  closeMenu();
+  toggle.hidden = !mobileMenu.matches;
+  if (mobileMenu.matches && focusWasInNav) toggle.focus();
+  else if (!mobileMenu.matches && focusWasOnToggle) nav.querySelector('a')?.focus();
+}
+syncMenu();
 toggle.addEventListener('click', () => {
+  if (!mobileMenu.matches) return;
   const open = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(open));
   toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
@@ -26,7 +36,7 @@ document.addEventListener('keydown', event => {
 document.addEventListener('click', event => {
   if (!event.target.closest('.nav-wrap')) closeMenu();
 });
-matchMedia('(min-width: 781px)').addEventListener('change', () => closeMenu());
+mobileMenu.addEventListener('change', syncMenu);
 document.querySelector('#current-year').textContent = new Date().getFullYear();
 const filters = document.querySelector('.filters');
 filters.hidden = false;
