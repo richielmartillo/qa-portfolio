@@ -80,6 +80,10 @@ Integrar testes de interface à execução automatizada e à análise de evidên
 
 Os desafios e estudos complementares exercitam raciocínio de testes, organização, tomada de decisão, automação e priorização por risco. Não são apresentados como experiência profissional contratada.
 
+### Linguagens utilizadas
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=richielmartillo&layout=compact)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Competências técnicas
 
 | Categoria | Ferramentas e tecnologias |
