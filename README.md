@@ -8,7 +8,8 @@ Este portfólio demonstra pensamento crítico, estratégia de testes, análise d
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=richielmartillo&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
 ### Projetos
-[![Readme Card](https://github-readme-stats.vercel.app/api/pin/?username=richielmartillo&repo=qa-portfolio.github.io&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+
+[![QA Portfolio](https://github-readme-stats.vercel.app/api/pin/?username=richielmartillo&repo=qa-portfolio&theme=dark)](https://github.com/richielmartillo/qa-portfolio)
 
 ### Automação web — Hub de Leitura · Interface
 
