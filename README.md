@@ -7,9 +7,13 @@ Este portfólio demonstra pensamento crítico, estratégia de testes, análise d
 ### Detalhes
 ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=richielmartillo&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
 
-### Projetos
+### Projetos em destaque
 
-[![QA Portfolio](https://github-readme-stats.vercel.app/api/pin/?username=richielmartillo&repo=qa-portfolio&theme=dark)](https://github.com/richielmartillo/qa-portfolio)
+[![Hub de Leitura UI](https://github-readme-stats.vercel.app/api/pin/?username=richielmartillo&repo=hub-de-leitura-ui-cypress-allure&theme=dark)](https://github.com/richielmartillo/hub-de-leitura-ui-cypress-allure)
+
+[![Hub de Leitura API](https://github-readme-stats.vercel.app/api/pin/?username=richielmartillo&repo=hub-de-leitura-api-cypress&theme=dark)](https://github.com/richielmartillo/hub-de-leitura-api-cypress)
+
+[![Testes Mobile Appium](https://github-readme-stats.vercel.app/api/pin/?username=richielmartillo&repo=modulo-32-test-mobile&theme=dark)](https://github.com/richielmartillo/modulo-32-test-mobile)
 
 ### Automação web — Hub de Leitura · Interface
 
