@@ -4,6 +4,9 @@ QA Tester freelancer em crowdtesting pela uTest, com experiência em testes func
 
 Este portfólio demonstra pensamento crítico, estratégia de testes, análise de riscos, automação e qualidade de software. Os repositórios abaixo são projetos técnicos desenvolvidos durante a formação e em práticas independentes; não representam vínculos profissionais contratados. A atuação profissional em crowdtesting é apresentada separadamente no site.
 
+### Detalhes
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=richielmartillo&show_icons=true&theme=dark)](https://github.com/anuraghazra/github-readme-stats)
+
 ## Projetos
 
 ### Automação web — Hub de Leitura · Interface
