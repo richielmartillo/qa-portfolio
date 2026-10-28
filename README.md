@@ -161,8 +161,8 @@ Organização por objetivo e tipo de teste, descrições baseadas em evidências
 
 ## Contato
 
-- [GitHub](https://github.com/richielmartillo)
-- [LinkedIn](https://www.linkedin.com/in/richard-marlon-balestrim)
+- [<img src='https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white' alt='Linkedin' height='30'>](https://www.linkedin.com/in/richard-marlon-balestrim/)
+
 
 ## Créditos
 
