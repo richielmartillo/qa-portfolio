@@ -143,7 +143,7 @@ qa-portfolio/
 ├── styles.css       # Identidade visual e layouts responsivos
 ├── script.js        # Menu, filtros, digitação e chuva digital
 ├── README.md
-└── ANALISE.md       # Diagnóstico e registro de validação
+
 ```
 
 ## Interface e acessibilidade
