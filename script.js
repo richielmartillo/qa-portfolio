@@ -109,3 +109,13 @@ document.addEventListener('visibilitychange', updateAnimations);
 new IntersectionObserver(entries => { visible = entries[0].isIntersecting; updateAnimations(); }).observe(document.querySelector('.hero'));
 new ResizeObserver(resizeCanvas).observe(canvas);
 resizeCanvas(); updateAnimations();
+
+// Native details/summary handles module expansion and keyboard accessibility.
+const responseToggle = document.querySelector('.response-toggle');
+const responsePanel = document.querySelector('#exercise-response');
+responseToggle.addEventListener('click', () => {
+  const expanded = responseToggle.getAttribute('aria-expanded') !== 'true';
+  responsePanel.hidden = !expanded;
+  responseToggle.setAttribute('aria-expanded', String(expanded));
+  responseToggle.textContent = expanded ? 'Ocultar exemplo de resposta' : 'Ver exemplo de resposta';
+});

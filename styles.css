@@ -642,11 +642,14 @@ button {
 }
 
 .module-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  scroll-margin-top: 6rem;
 }
 
 .learn-module {
-  overflow: hidden;
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .module-trigger {
@@ -659,6 +662,19 @@ button {
   background: transparent;
   color: var(--text);
   text-align: left;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.module-trigger::-webkit-details-marker { display: none; }
+
+.module-trigger:focus-visible {
+  outline-offset: -4px;
+}
+
+.learn-module[open] > .module-trigger {
+  background: rgba(0,255,136,0.04);
 }
 
 .module-number {
@@ -667,6 +683,7 @@ button {
   justify-content: center;
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
   border-radius: 50%;
   background: rgba(0,255,136,0.08);
   border: 1px solid rgba(0,255,136,0.2);
@@ -689,9 +706,9 @@ button {
   padding: 0 1.25rem 1.25rem;
 }
 
-.module-panel[hidden] {
-  display: none;
-}
+.module-icon::before { content: "+"; }
+
+.learn-module[open] > .module-trigger .module-icon::before { content: "−"; }
 
 .module-panel p,
 .module-panel li,
@@ -711,6 +728,7 @@ button {
 }
 
 .test-case-table {
+  table-layout: fixed;
   width: 100%;
   border-collapse: collapse;
   margin-top: 1rem;
@@ -736,9 +754,12 @@ button {
 }
 
 .test-case-table th {
+  width: 32%;
   background: rgba(0,255,136,0.06);
   color: var(--text);
 }
+
+.test-case-table td ol { margin: 0; }
 
 .example-box {
   margin-top: 1rem;
@@ -832,8 +853,7 @@ button {
   }
 
   .projects-grid,
-  .skills-grid,
-  .module-grid {
+  .skills-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -922,7 +942,6 @@ button {
   .menu-toggle,
   .main-nav,
   .motion-toggle,
-  .module-next,
   .response-toggle,
   .hero-bottom {
     display: none !important;

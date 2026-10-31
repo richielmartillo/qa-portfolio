@@ -374,12 +374,12 @@
         </div>
 
         <div class="module-grid" id="modulos-qa">
-          <article class="learn-module is-open">
-            <button class="module-trigger" type="button" aria-expanded="true" aria-controls="module-panel-1" id="module-trigger-1">
+          <details class="learn-module">
+            <summary class="module-trigger" id="module-trigger-1">
               <span class="module-number">01</span>
               <span class="module-title">O que é Quality Assurance?</span>
-              <span class="module-icon" aria-hidden="true">✦</span>
-            </button>
+              <span class="module-icon" aria-hidden="true"></span>
+            </summary>
             <div class="module-panel" id="module-panel-1" role="region" aria-labelledby="module-trigger-1">
               <p>QA, ou Quality Assurance, é a área responsável por garantir que o software entregue ao usuário seja útil, confiável e seguro. Em vez de focar apenas em “achar erros no fim”, o objetivo é prevenir problemas durante o processo de criação.</p>
               <p><strong>Qual a importância da qualidade de software?</strong> Porque aplicações que quebram, demoram, confundem ou falham na rotina do usuário geram perda de confiança, retrabalho e custos maiores para a empresa.</p>
@@ -389,17 +389,16 @@
                 <li>Exemplo do cotidiano: quando um site de compras não permite finalizar uma compra devido a um campo obrigatório esquecido, isso impacta a experiência e a confiança do cliente.</li>
                 <li>Exemplo prático: validar que o botão “Continuar” só funcione quando todos os campos necessários estiverem preenchidos.</li>
               </ul>
-              <button class="button secondary module-next" type="button">Próximo módulo</button>
             </div>
-          </article>
+          </details>
 
-          <article class="learn-module">
-            <button class="module-trigger" type="button" aria-expanded="false" aria-controls="module-panel-2" id="module-trigger-2">
+          <details class="learn-module">
+            <summary class="module-trigger" id="module-trigger-2">
               <span class="module-number">02</span>
               <span class="module-title">Tipos de testes de software</span>
-              <span class="module-icon" aria-hidden="true">▣</span>
-            </button>
-            <div class="module-panel" id="module-panel-2" role="region" aria-labelledby="module-trigger-2" hidden>
+              <span class="module-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="module-panel" id="module-panel-2" role="region" aria-labelledby="module-trigger-2">
               <p><strong>Testes funcionais:</strong> validam se as regras do sistema funcionam como esperado.</p>
               <p><strong>Testes exploratórios:</strong> simulam a navegação livre do usuário para descobrir falhas inesperadas.</p>
               <p><strong>Testes de regressão:</strong> verificam se mudanças recentes não quebraram áreas já funcionando.</p>
@@ -412,17 +411,16 @@
                 <li>Exemplo de usabilidade: verificar se o botão de checkout está visível e com texto claro.</li>
                 <li>Exemplo de API: confirmar que um pedido com dados inválidos retorna status 400.</li>
               </ul>
-              <button class="button secondary module-next" type="button">Próximo módulo</button>
             </div>
-          </article>
+          </details>
 
-          <article class="learn-module">
-            <button class="module-trigger" type="button" aria-expanded="false" aria-controls="module-panel-3" id="module-trigger-3">
+          <details class="learn-module">
+            <summary class="module-trigger" id="module-trigger-3">
               <span class="module-number">03</span>
               <span class="module-title">Como criar um caso de teste</span>
-              <span class="module-icon" aria-hidden="true">☑</span>
-            </button>
-            <div class="module-panel" id="module-panel-3" role="region" aria-labelledby="module-trigger-3" hidden>
+              <span class="module-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="module-panel" id="module-panel-3" role="region" aria-labelledby="module-trigger-3">
               <p>Um caso de teste é um roteiro de verificação para validar um requisito ou comportamento. Ele deve ser claro, objetivo e reutilizável.</p>
               <ul>
                 <li><strong>Pré-condições:</strong> o estado necessário para começar a execução.</li>
@@ -433,39 +431,27 @@
               </ul>
 
               <table class="test-case-table">
-                <caption>Exemplo de caso de teste — Login</caption>
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Objetivo</th>
-                    <th>Pré-condição</th>
-                    <th>Passos</th>
-                    <th>Resultado esperado</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
+                <caption>Exemplo fictício de caso de teste — Login</caption>
                 <tbody>
-                  <tr>
-                    <td>TC-01</td>
-                    <td>Validar login com credenciais válidas.</td>
-                    <td>Usuário cadastrado e senha correta.</td>
-                    <td>1. Acessar a tela de login.<br>2. Informar e-mail e senha.<br>3. Clicar em entrar.</td>
-                    <td>O usuário é autenticado e redirecionado ao painel.</td>
-                    <td>Passou</td>
-                  </tr>
+                  <tr><th scope="row">ID</th><td>TC-01</td></tr>
+                  <tr><th scope="row">Objetivo</th><td>Validar login com credenciais válidas.</td></tr>
+                  <tr><th scope="row">Pré-condições</th><td>Usuário cadastrado, ativo e desconectado; página de login aberta.</td></tr>
+                  <tr><th scope="row">Passos de execução</th><td><ol><li>Informar o e-mail cadastrado.</li><li>Informar a senha correta.</li><li>Clicar em “Entrar”.</li></ol></td></tr>
+                  <tr><th scope="row">Resultado esperado</th><td>O usuário é autenticado e redirecionado ao painel.</td></tr>
+                  <tr><th scope="row">Resultado obtido</th><td>Na execução fictícia, o painel foi exibido com o usuário autenticado.</td></tr>
+                  <tr><th scope="row">Status</th><td>Aprovado nesta execução fictícia.</td></tr>
                 </tbody>
               </table>
-              <button class="button secondary module-next" type="button">Próximo módulo</button>
             </div>
-          </article>
+          </details>
 
-          <article class="learn-module">
-            <button class="module-trigger" type="button" aria-expanded="false" aria-controls="module-panel-4" id="module-trigger-4">
+          <details class="learn-module">
+            <summary class="module-trigger" id="module-trigger-4">
               <span class="module-number">04</span>
               <span class="module-title">Como identificar e reportar bugs</span>
-              <span class="module-icon" aria-hidden="true">⚑</span>
-            </button>
-            <div class="module-panel" id="module-panel-4" role="region" aria-labelledby="module-trigger-4" hidden>
+              <span class="module-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="module-panel" id="module-panel-4" role="region" aria-labelledby="module-trigger-4">
               <p>Um bug é qualquer comportamento que diverge do esperado e compromete a qualidade do produto. Para reportar bem, o QA precisa reproduzir, documentar e evidenciar o problema.</p>
               <ul>
                 <li><strong>Como reproduzir:</strong> seguir os passos até que o defeito apareça.</li>
@@ -478,22 +464,24 @@
               <div class="example-box">
                 <h4>Exemplo fictício de relatório de bug</h4>
                 <p><strong>Título:</strong> Login permite acesso com senha vazia.</p>
-                <p><strong>Ambiente:</strong> Chrome 128, Windows 11, build 2.4.1.</p>
+                <p><strong>Ambiente:</strong> Chrome 128, Windows 11, build 2.4.1 (ambiente fictício de testes).</p>
+                <p><strong>Pré-condições:</strong> Usuário de teste cadastrado e desconectado; página de login aberta.</p>
                 <p><strong>Passos para reprodução:</strong> 1. Acessar a página de login. 2. Digitar e-mail válido. 3. Deixar o campo de senha em branco. 4. Clicar em “Entrar”.</p>
                 <p><strong>Resultado esperado:</strong> O sistema deve bloquear o login e exibir mensagem de erro.</p>
                 <p><strong>Resultado obtido:</strong> O sistema autentica o usuário e entra na conta.</p>
+                <p><strong>Severidade:</strong> Crítica, pois permite acesso à conta sem validar a senha.</p>
+                <p><strong>Prioridade:</strong> Alta, para corrigir com urgência o acesso indevido.</p>
               </div>
-              <button class="button secondary module-next" type="button">Próximo módulo</button>
             </div>
-          </article>
+          </details>
 
-          <article class="learn-module">
-            <button class="module-trigger" type="button" aria-expanded="false" aria-controls="module-panel-5" id="module-trigger-5">
+          <details class="learn-module">
+            <summary class="module-trigger" id="module-trigger-5">
               <span class="module-number">05</span>
               <span class="module-title">Seu primeiro exercício prático</span>
-              <span class="module-icon" aria-hidden="true">▶</span>
-            </button>
-            <div class="module-panel" id="module-panel-5" role="region" aria-labelledby="module-trigger-5" hidden>
+              <span class="module-icon" aria-hidden="true"></span>
+            </summary>
+            <div class="module-panel" id="module-panel-5" role="region" aria-labelledby="module-trigger-5">
               <p>Imagine que você está testando uma página de login. O sistema permite entrar mesmo quando o campo de senha está vazio.</p>
               <ol>
                 <li>Qual é o comportamento incorreto?</li>
@@ -501,13 +489,13 @@
                 <li>Quais passos você usaria para reproduzir o problema?</li>
                 <li>Como é melhor registrar esse defeito?</li>
               </ol>
-              <button class="button secondary response-toggle" type="button" aria-expanded="false">Ver exemplo de resposta</button>
-              <div class="response-panel" hidden>
+              <button class="button secondary response-toggle" type="button" aria-expanded="false" aria-controls="exercise-response">Ver exemplo de resposta</button>
+              <div class="response-panel" id="exercise-response" hidden>
                 <p><strong>Resposta comentada:</strong></p>
-                <p>O comportamento incorreto é permitir o login sem senha, mesmo com a regra de validação esperada. O resultado esperado seria apresentar uma mensagem de erro e impedir o acesso. Para reproduzir, basta abrir a página de login, preencher um e-mail válido, manter a senha em branco e clicar em entrar. Para registrar, escreva um título como “Login com senha vazia permite autenticação”, informe ambiente, passos, resultado esperado e obtido, e anexe evidências como print da tela.</p>
+                <p>O comportamento incorreto é permitir o login sem senha, mesmo com a regra de validação esperada. O resultado esperado seria apresentar uma mensagem de erro e impedir o acesso. Para reproduzir, basta abrir a página de login, preencher um e-mail válido, manter a senha em branco e clicar em entrar. Para registrar, escreva um título como “Login com senha vazia permite autenticação”, informe ambiente, passos, resultado esperado e obtido, e anexe evidências como print da tela usando apenas dados fictícios. Neste cenário, a severidade é crítica pelo acesso indevido e a prioridade é alta; a classificação final deve seguir os critérios da equipe.</p>
               </div>
             </div>
-          </article>
+          </details>
         </div>
       </div>
     </section>
