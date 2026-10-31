@@ -95,14 +95,19 @@ button {
 }
 
 .brand-mark {
-  display: inline-grid;
-  place-items: center;
-  width: 42px;
-  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+  width: 48px;
+  height: 48px;
+  white-space: nowrap;
+  line-height: 1;
+  letter-spacing: 0;
   border-radius: 12px;
   border: 1px solid rgba(0, 255, 136, 0.25);
   background: rgba(0, 255, 136, 0.08);
-  color: var(--green);
+  color: var(--text);
   font-size: 1.05rem;
 }
 
@@ -110,7 +115,7 @@ button {
   color: var(--green);
 }
 
-.brand span:not(.brand-mark) {
+.brand > span:not(.brand-mark) {
   display: flex;
   flex-direction: column;
   line-height: 1.1;
