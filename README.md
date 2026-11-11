@@ -149,7 +149,7 @@ qa-portfolio/
 Identidade tecnológica inspirada em terminais e painéis industriais, com preto profundo, verde Matrix, vermelho industrial e cinza metálico. Não utiliza personagens, logotipos ou imagens de franquias.
 
 - Layout responsivo com Grid e Flexbox; navegação por teclado e link de salto.
-- Até 780px, menu recolhível com `aria-expanded`, fechamento por Escape e retorno de foco. Acima de 780px, navegação horizontal sem botão Menu.
+- Até 1100px, menu recolhível com `aria-expanded`, fechamento por Escape e retorno de foco. Acima de 1100px, navegação horizontal sem botão Menu.
 - Ao cruzar o breakpoint, o menu é fechado e o foco é transferido quando o controle ou link focado ficaria oculto.
 - As regras responsivas ficam centralizadas em `styles.css`, sem folha adicional para o menu.
 - Conteúdo principal disponível sem JavaScript; filtros são melhoria progressiva.
@@ -170,3 +170,12 @@ Organização por objetivo e tipo de teste, descrições baseadas em evidências
 ## Créditos
 
 Projetos desenvolvidos durante a formação em Engenharia de Qualidade de Software da EBAC e em estudos independentes. Autoria do portfólio: Richard Marlon Balestrim.
+
+
+## Integração com o currículo digital
+
+- O menu contém **Currículo Digital**, com ícone SVG decorativo, e a apresentação contém **Ver currículo**, reutilizando os estilos existentes.
+- Ambos apontam para https://richielmartillo.github.io/qa-digital-cv/ e abrem na mesma aba.
+- O portfólio permanece somente em português. A seleção de português, espanhol ou inglês é feita diretamente no currículo digital.
+- O menu recolhido oculta seus links também da navegação por teclado. Escape fecha o menu e devolve o foco ao botão. O menu passa a ser recolhível até 1100px para acomodar o novo item em tablets.
+- Verificação local: sintaxe JavaScript, eventos do menu com DOM simulado, Escape, retorno de foco e preservação de todos os links anteriores. Validação visual em navegador e disponibilidade dos sites publicados ainda precisam ser confirmadas.

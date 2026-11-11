@@ -3,7 +3,7 @@ document.documentElement.classList.add('js');
 const nav = document.querySelector('.main-nav');
 const toggle = document.querySelector('.menu-toggle');
 // Keep the interaction breakpoint identical to the CSS media query.
-const mobileMenu = matchMedia('(max-width: 780px)');
+const mobileMenu = matchMedia('(max-width: 1100px)');
 function closeMenu(restoreFocus = false) {
   nav.classList.remove('open');
   toggle.setAttribute('aria-expanded', 'false');
@@ -26,9 +26,12 @@ toggle.addEventListener('click', () => {
   toggle.setAttribute('aria-label', open ? 'Fechar menu' : 'Abrir menu');
 });
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
-  closeMenu();
-  document.querySelector(link.hash)?.querySelector('h2')?.setAttribute('tabindex', '-1');
-  document.querySelector(link.hash)?.querySelector('h2')?.focus({ preventScroll: true });
+  const isInternal = link.origin === location.origin && link.pathname === location.pathname && link.hash;
+  closeMenu(mobileMenu.matches && !isInternal);
+  if (!isInternal) return;
+  const heading = document.getElementById(decodeURIComponent(link.hash.slice(1)))?.querySelector('h2');
+  heading?.setAttribute('tabindex', '-1');
+  heading?.focus({ preventScroll: true });
 }));
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && nav.classList.contains('open')) closeMenu(true);
