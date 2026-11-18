@@ -411,6 +411,14 @@ button {
   margin: 0 0 1rem;
 }
 
+.about-text .education-link {
+  color: var(--green);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+}
+
 .languages {
   display: flex;
   flex-wrap: wrap;
